@@ -29,7 +29,7 @@ Follow these steps to run the project locally:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/multi-language-translator.git
+git clone https://github.com/Ayush0135/multi-language-translator.git
 cd multi-language-translator
 2. (Optional) Create a Virtual Environment
 bash
