@@ -1,4 +1,6 @@
 Multi-language Translator
+
+
 This project implements a multi-language translation tool leveraging the power of the Hugging Face transformers library and a user-friendly web interface built with Gradio. It utilizes the NLLB-200 distilled model, known for its capabilities in translating across a wide range of languages.
 
 Features
