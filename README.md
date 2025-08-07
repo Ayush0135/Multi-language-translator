@@ -1,20 +1,99 @@
-Multi-language Translator
+🌐 Multi-language Translator
+
+This project implements a multi-language translation tool using the Hugging Face Transformers library and an interactive web interface built with Gradio. It leverages the facebook/nllb-200-distilled-600M model, capable of translating across 200+ languages with high accuracy.
+
+🚀 Features
+English to Multiple Languages: Translate English text into various languages supported by the NLLB-200 model.
+
+Gradio Interface: Clean and interactive web UI for easy input, language selection, and output display.
+
+High-Quality Translations: Uses the facebook/nllb-200-distilled-600M model from Hugging Face Transformers.
+
+Easy Deployment: Quickly launch and share your translation tool with Gradio.
+
+🧰 Technologies Used
+Python: Core programming language.
+
+Transformers (Hugging Face): For loading and using the NLLB-200 model.
+
+Torch: Backend deep learning framework.
+
+Gradio: For building the web-based interface.
+
+JSON: Used for loading language code mappings from a file.
+
+🛠️ Setup and Installation
+Follow these steps to run the project locally:
+
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/multi-language-translator.git
+cd multi-language-translator
+2. (Optional) Create a Virtual Environment
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # For Windows: venv\Scripts\activate
+3. Install Required Packages
+nginx
+Copy
+Edit
+pip install -r requirements.txt
+If requirements.txt is not available, install manually:
+
+nginx
+Copy
+Edit
+pip install transformers torch gradio
+4. Run the Application
+nginx
+Copy
+Edit
+python app.py
+This will launch the Gradio interface in your browser or give you a link.
+
+📁 Project Structure
+bash
+Copy
+Edit
+multi-language-translator/
+├── app.py               # Main application script
+├── language.json        # Contains language names and FLORES-200 codes
+├── requirements.txt     # List of Python dependencies
+└── README.md            # Project documentation
+🤖 Model Details
+Model Name: facebook/nllb-200-distilled-600M
+
+Architecture: Transformer-based multilingual model
+
+Languages Supported: 200+ (FLORES-200 codes)
+
+Purpose: Translate text from English to other languages
+
+Benefits: Fast, accurate, and lightweight version of the full NLLB-200 model
+
+🧪 Example Usage
+Open the app in your browser.
+
+Type a sentence in English.
+
+Choose your target language.
+
+Click Translate.
+
+View the translated text instantly.
+
+📄 License
+This project is licensed under the MIT License.
+
+🙏 Acknowledgments
+Meta AI - NLLB
+
+Hugging Face
+
+Gradio
 
 
-This project implements a multi-language translation tool leveraging the power of the Hugging Face transformers library and a user-friendly web interface built with Gradio. It utilizes the NLLB-200 distilled model, known for its capabilities in translating across a wide range of languages.
-
-Features
-English to Multiple Languages Translation: Translate text input in English to several other languages supported by the NLLB-200 model.
-Intuitive Gradio Interface: Provides a simple and interactive web interface for seamless text input, language selection, and viewing translated output.
-Utilizes State-of-the-Art Model: Employs the facebook/nllb-200-distilled-600M model from the Hugging Face transformers library for high-quality translations.
-Easy to Deploy: The Gradio interface makes it straightforward to share and deploy the translator.
-Technologies Used
-Python: The core programming language for the project.
-transformers (Hugging Face): A powerful library for working with pre-trained models, including the NLLB-200 translation model.
-torch: A deep learning framework used by the transformers library.
-gradio: A library for quickly creating customizable UI components for machine learning models.
-json: Used for loading language code data from a JSON file.
-Setup and Installation
-To set up and run this project locally, follow these steps:
-
-Clone the repository:
